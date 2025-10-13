@@ -1,16 +1,10 @@
-#include <iostream>
-#include <string>
-#include <vector>
+#include "gui/mainwindow.hpp"
+#include <QApplication>
 
-using namespace std;
-
-int main()
+int main(int argc, char* argv[])
 {
-	vector<string> msg{ "Hello", "C++", "World", "from", "VS Code", "and the C++ extension!" };
-
-	for (const string& word : msg)
-	{
-		cout << word << " ";
-	}
-	cout << endl;
+	QApplication app(argc, argv);
+	MainWindow w;
+	w.show();
+	return app.exec();
 }
