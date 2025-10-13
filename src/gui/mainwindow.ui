@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_at"/>
+   </widget>
+   <widget class="QMenu" name="menuText">
+    <property name="title">
+     <string>Text</string>
+    </property>
+    <widget class="QMenu" name="menuFont">
+     <property name="title">
+      <string>Font</string>
+     </property>
+     <widget class="QMenu" name="menuType">
+      <property name="title">
+       <string>Type</string>
+      </property>
+      <addaction name="actionTimes_New_Qweyke"/>
+      <addaction name="actionQweykibri"/>
+     </widget>
+     <addaction name="menuType"/>
+     <addaction name="actionSize_2"/>
+    </widget>
+    <addaction name="menuFont"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuText"/>
+  </widget>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_at">
+   <property name="text">
+    <string>Save at</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSize">
+   <property name="text">
+    <string>Font size</string>
+   </property>
+  </action>
+  <action name="actionSize_2">
+   <property name="text">
+    <string>Size</string>
+   </property>
+  </action>
+  <action name="actionTimes_New_Qweyke">
+   <property name="text">
+    <string>Times New Qweyke</string>
+   </property>
+  </action>
+  <action name="actionQweykibri">
+   <property name="text">
+    <string>Qweykibri</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

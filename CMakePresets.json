@@ -14,6 +14,7 @@
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_C_COMPILER": "C:/Program Files/LLVM/bin/clang-cl.exe",
         "CMAKE_CXX_COMPILER": "C:/Program Files/LLVM/bin/clang-cl.exe",
+        "CMAKE_PREFIX_PATH": "C:/Qt/6.10.0/msvc2022_64",
         "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
       }
     },
@@ -26,6 +27,7 @@
         "CMAKE_BUILD_TYPE": "Release",
         "CMAKE_C_COMPILER": "C:/Program Files/LLVM/bin/clang-cl.exe",
         "CMAKE_CXX_COMPILER": "C:/Program Files/LLVM/bin/clang-cl.exe",
+        "CMAKE_PREFIX_PATH": "C:/Qt/6.10.0/msvc2022_64",
         "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
       }
     }
