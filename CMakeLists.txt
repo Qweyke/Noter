@@ -27,9 +27,11 @@ set(CMAKE_AUTORCC ON)
 # )
 # FetchContent_MakeAvailable(spdlog)
 
+# --- Headers ---
+file(GLOB_RECURSE CPP_HEADERS CONFIGURE_DEPENDS include/*.hpp)
+
 # --- Sources ---
 file(GLOB_RECURSE CPP_SOURCES CONFIGURE_DEPENDS src/*.cpp)
-file(GLOB_RECURSE CPP_HEADERS CONFIGURE_DEPENDS include/*.hpp)
 file(GLOB_RECURSE QT_UI_FILES CONFIGURE_DEPENDS src/*.ui)
 
 # --- Executable ---
@@ -40,7 +42,9 @@ add_executable(${PROJECT_NAME}
 )
 
 # --- Include dirs ---
-target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${PROJECT_SOURCE_DIR}/include
+)
 
 # --- Link libraries ---
 target_link_libraries(${PROJECT_NAME}
