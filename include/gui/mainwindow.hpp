@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QMainWindow>
+#include "core/filesearcher.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui
@@ -19,4 +20,10 @@ class MainWindow : public QMainWindow
 
   private:
 	Ui::MainWindow* ui;
+	FileSearcher fileSearcher;
+
+	void doInitialConnects();
+	void doSaveFile();
+
+  signals:
 };
